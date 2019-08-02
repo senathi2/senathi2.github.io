@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>Olympic Medals Visualization</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
   </head>
   <body>
     chart = {
@@ -45,7 +43,7 @@
     
   return svg.node();
 }
-    data = (await d3.csv("https://raw.githubusercontent.com/d3/d3-hierarchy/v1.1.8/test/data/flare.csv", ({id, value}) => ({name: id.split(".").pop(), title: id.replace(/\./g, "/"), group: id.split(".")[1], value: +value})))
+    data = (await d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/summer.csv", ({id, value}) => ({name: id.split(".").pop(), title: id.replace(/\./g, "/"), group: id.split(".")[1], value: +value})))
     pack = ƒ(data)
     pack = data => d3.pack()
     .size([width - 2, height - 2])
