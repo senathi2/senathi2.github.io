@@ -43,7 +43,7 @@
     
   return svg.node();
 }
-    data = (await d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/summer.csv", ({id, value}) => ({name: id.split(".").pop(), title: id.replace(/\./g, "/"), group: id.split(".")[1], value: +value})))
+    data = (await d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/summer.csv", ({Year, City}) => ({name: id.split(".").pop(), title: id.replace(/\./g, "/"), group: id.split(".")[1], value: +value})))
     pack = ƒ(data)
     pack = data => d3.pack()
     .size([width - 2, height - 2])
