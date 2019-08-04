@@ -1,0 +1,1233 @@
+Year,City,Country,Gold,Silver,Bronze
+1896,Athens,Australia,2,0,0
+1896,Athens,Austria,2,1,2
+1896,Athens,Denmark,1,2,3
+1896,Athens,France,5,4,2
+1896,Athens,Germany,26,5,2
+1896,Athens,Greece,10,20,22
+1896,Athens,Hungary,2,1,3
+1896,Athens,Mixed team,2,2,2
+1896,Athens,Switzerland,1,2,0
+1896,Athens,United Kingdom,2,3,2
+1896,Athens,United States,11,7,2
+1900,Paris,Australia,2,0,3
+1900,Paris,Austria,0,3,3
+1900,Paris,Belgium,5,19,15
+1900,Paris,Bohemia,0,1,1
+1900,Paris,Canada,1,0,1
+1900,Paris,Cuba,1,1,0
+1900,Paris,Denmark,1,3,2
+1900,Paris,France,46,86,53
+1900,Paris,Germany,11,19,10
+1900,Paris,Hungary,1,2,2
+1900,Paris,India,0,2,0
+1900,Paris,Italy,2,2,0
+1900,Paris,Mixed team,18,8,8
+1900,Paris,Netherlands,0,5,15
+1900,Paris,Norway,0,6,3
+1900,Paris,Spain,2,0,0
+1900,Paris,Sweden,0,0,1
+1900,Paris,Switzerland,13,1,1
+1900,Paris,United Kingdom,48,20,10
+1900,Paris,United States,27,14,14
+1904,St Louis,Austria,0,0,1
+1904,St Louis,Canada,26,9,0
+1904,St Louis,Cuba,4,2,3
+1904,St Louis,Germany,4,4,5
+1904,St Louis,Greece,1,0,1
+1904,St Louis,Hungary,2,1,1
+1904,St Louis,Mixed team,3,5,0
+1904,St Louis,Switzerland,1,0,1
+1904,St Louis,United Kingdom,1,1,0
+1904,St Louis,United States,146,137,111
+1908,London,Angola,15,2,2
+1908,London,Austria,0,0,1
+1908,London,Belgium,1,24,6
+1908,London,Bohemia,0,0,5
+1908,London,Canada,17,8,26
+1908,London,Denmark,0,12,3
+1908,London,Finland,1,1,27
+1908,London,France,9,5,21
+1908,London,Germany,4,11,7
+1908,London,Greece,0,3,0
+1908,London,Hungary,6,7,5
+1908,London,Italy,2,5,0
+1908,London,Netherlands,0,0,11
+1908,London,Norway,7,34,3
+1908,London,Russia,1,2,0
+1908,London,South Africa,1,1,0
+1908,London,Sweden,69,18,11
+1908,London,United Kingdom,144,135,68
+1908,London,United States,34,14,15
+1912,Stockholm,Angola,5,2,3
+1912,Stockholm,Austria,0,9,5
+1912,Stockholm,Belgium,9,1,9
+1912,Stockholm,Canada,3,2,3
+1912,Stockholm,Denmark,5,45,34
+1912,Stockholm,Finland,9,36,22
+1912,Stockholm,France,10,10,5
+1912,Stockholm,Germany,10,19,23
+1912,Stockholm,Greece,1,0,1
+1912,Stockholm,Hungary,10,17,3
+1912,Stockholm,Italy,18,1,2
+1912,Stockholm,Netherlands,0,0,22
+1912,Stockholm,Norway,41,6,29
+1912,Stockholm,Russia,0,5,9
+1912,Stockholm,South Africa,5,2,0
+1912,Stockholm,Sweden,86,62,25
+1912,Stockholm,United Kingdom,44,58,58
+1912,Stockholm,United States,45,25,31
+1920,Antwerp,Australia,0,5,1
+1920,Antwerp,Belgium,57,66,65
+1920,Antwerp,Brazil,1,1,5
+1920,Antwerp,Canada,10,3,3
+1920,Antwerp,Czechoslovakia,0,0,10
+1920,Antwerp,Denmark,30,44,1
+1920,Antwerp,Estonia,1,2,0
+1920,Antwerp,Finland,18,14,17
+1920,Antwerp,France,13,73,55
+1920,Antwerp,Greece,0,5,0
+1920,Antwerp,Italy,68,9,7
+1920,Antwerp,Japan,0,3,0
+1920,Antwerp,Luxembourg,0,1,0
+1920,Antwerp,Netherlands,14,10,24
+1920,Antwerp,New Zealand,0,0,1
+1920,Antwerp,Norway,58,56,27
+1920,Antwerp,South Africa,3,12,6
+1920,Antwerp,Spain,0,24,0
+1920,Antwerp,Sweden,53,36,57
+1920,Antwerp,Switzerland,6,2,21
+1920,Antwerp,United Kingdom,55,35,17
+1920,Antwerp,United States,110,45,38
+1924,Paris,Argentina,6,3,2
+1924,Paris,Australia,3,5,2
+1924,Paris,Austria,0,3,1
+1924,Paris,Belgium,3,29,6
+1924,Paris,Canada,0,19,1
+1924,Paris,Czechoslovakia,1,4,5
+1924,Paris,Denmark,2,8,2
+1924,Paris,Estonia,1,1,4
+1924,Paris,Finland,24,13,15
+1924,Paris,France,39,63,20
+1924,Paris,Haiti,0,0,7
+1924,Paris,Hungary,2,10,8
+1924,Paris,Italy,25,5,21
+1924,Paris,Japan,0,0,1
+1924,Paris,Netherlands,8,1,17
+1924,Paris,New Zealand,0,0,1
+1924,Paris,Norway,16,7,3
+1924,Paris,Poland,0,4,1
+1924,Paris,Portugal,0,0,3
+1924,Paris,Romania,0,0,23
+1924,Paris,South Africa,1,1,1
+1924,Paris,Sweden,6,25,49
+1924,Paris,Switzerland,13,31,21
+1924,Paris,United Kingdom,17,29,20
+1924,Paris,United States,110,37,51
+1924,Paris,Uruguay,22,0,0
+1924,Paris,Yugoslavia,2,0,0
+1928,Amsterdam,Argentina,3,24,5
+1928,Amsterdam,Australia,1,2,1
+1928,Amsterdam,Austria,2,0,2
+1928,Amsterdam,Belgium,0,1,4
+1928,Amsterdam,Canada,7,5,21
+1928,Amsterdam,Chile,0,1,0
+1928,Amsterdam,Czechoslovakia,2,12,2
+1928,Amsterdam,Denmark,5,5,3
+1928,Amsterdam,Egypt,2,1,1
+1928,Amsterdam,Estonia,2,1,6
+1928,Amsterdam,Finland,8,8,9
+1928,Amsterdam,France,7,16,13
+1928,Amsterdam,Germany,20,13,39
+1928,Amsterdam,Haiti,0,1,0
+1928,Amsterdam,Hungary,9,11,0
+1928,Amsterdam,India,15,0,0
+1928,Amsterdam,Ireland,1,0,0
+1928,Amsterdam,Italy,18,21,31
+1928,Amsterdam,Japan,2,5,1
+1928,Amsterdam,Netherlands,20,39,6
+1928,Amsterdam,New Zealand,1,0,0
+1928,Amsterdam,Norway,4,4,1
+1928,Amsterdam,Philippines,0,0,1
+1928,Amsterdam,Poland,1,3,14
+1928,Amsterdam,South Africa,1,0,5
+1928,Amsterdam,Spain,3,0,0
+1928,Amsterdam,Sweden,7,8,21
+1928,Amsterdam,Switzerland,16,8,5
+1928,Amsterdam,United Kingdom,6,25,24
+1928,Amsterdam,United States,43,24,17
+1928,Amsterdam,Uruguay,22,0,0
+1928,Amsterdam,Yugoslavia,1,1,10
+1932,Los Angeles,Argentina,3,1,0
+1932,Los Angeles,Australia,3,1,1
+1932,Los Angeles,Austria,1,1,3
+1932,Los Angeles,Canada,2,13,23
+1932,Los Angeles,Czechoslovakia,1,2,1
+1932,Los Angeles,Denmark,0,5,4
+1932,Los Angeles,Finland,5,8,16
+1932,Los Angeles,France,23,8,6
+1932,Los Angeles,Germany,7,26,5
+1932,Los Angeles,Hungary,20,4,8
+1932,Los Angeles,India,11,0,0
+1932,Los Angeles,Ireland,2,0,0
+1932,Los Angeles,Italy,21,38,18
+1932,Los Angeles,Japan,10,17,4
+1932,Los Angeles,Latvia,0,1,0
+1932,Los Angeles,Mexico,0,2,0
+1932,Los Angeles,Netherlands,2,10,0
+1932,Los Angeles,New Zealand,0,2,0
+1932,Los Angeles,Philippines,0,0,3
+1932,Los Angeles,Poland,2,3,14
+1932,Los Angeles,South Africa,2,0,3
+1932,Los Angeles,Spain,0,0,1
+1932,Los Angeles,Sweden,12,7,12
+1932,Los Angeles,Switzerland,0,1,0
+1932,Los Angeles,United Kingdom,8,12,14
+1932,Los Angeles,United States,78,44,59
+1932,Los Angeles,Uruguay,0,0,1
+1936,Berlin,Argentina,5,2,4
+1936,Berlin,Australia,0,0,1
+1936,Berlin,Austria,5,41,4
+1936,Berlin,Belgium,0,0,12
+1936,Berlin,Canada,1,12,9
+1936,Berlin,Czechoslovakia,5,12,0
+1936,Berlin,Denmark,0,3,3
+1936,Berlin,Egypt,2,1,2
+1936,Berlin,Estonia,2,2,3
+1936,Berlin,Finland,7,6,13
+1936,Berlin,France,12,13,18
+1936,Berlin,Germany,88,63,59
+1936,Berlin,Hungary,25,1,16
+1936,Berlin,India,19,0,0
+1936,Berlin,Italy,36,30,5
+1936,Berlin,Japan,9,4,8
+1936,Berlin,Latvia,0,1,1
+1936,Berlin,Mexico,0,0,16
+1936,Berlin,Netherlands,9,7,21
+1936,Berlin,New Zealand,1,0,0
+1936,Berlin,Norway,1,12,15
+1936,Berlin,Philippines,0,0,1
+1936,Berlin,Poland,0,5,4
+1936,Berlin,Portugal,0,0,3
+1936,Berlin,Romania,0,2,0
+1936,Berlin,South Africa,0,1,0
+1936,Berlin,Sweden,7,11,16
+1936,Berlin,Switzerland,1,22,24
+1936,Berlin,Turkey,1,0,1
+1936,Berlin,United Kingdom,12,16,8
+1936,Berlin,United States,51,26,15
+1936,Berlin,Yugoslavia,0,1,0
+1948,London,Argentina,3,8,1
+1948,London,Australia,2,9,5
+1948,London,Austria,1,0,3
+1948,London,Belgium,4,2,8
+1948,London,Brazil,0,0,12
+1948,London,Canada,0,1,5
+1948,London,Cuba,0,2,0
+1948,London,Czechoslovakia,14,3,3
+1948,London,Denmark,7,15,27
+1948,London,Egypt,2,2,1
+1948,London,Finland,15,7,7
+1948,London,France,25,22,21
+1948,London,Hungary,15,24,21
+1948,London,India,20,0,0
+1948,London,Iran,0,0,1
+1948,London,Italy,20,31,12
+1948,London,Jamaica,1,2,0
+1948,London,"Korea, South",0,0,2
+1948,London,Mexico,4,1,4
+1948,London,Netherlands,8,2,32
+1948,London,Norway,3,4,11
+1948,London,Panama,0,0,2
+1948,London,Peru,1,0,0
+1948,London,Poland,0,0,1
+1948,London,Portugal,0,2,3
+1948,London,Puerto Rico*,0,0,1
+1948,London,South Africa,2,1,1
+1948,London,Spain,0,3,0
+1948,London,Sri Lanka,0,1,0
+1948,London,Sweden,29,15,29
+1948,London,Switzerland,5,22,5
+1948,London,Trinidad and Tobago,0,1,0
+1948,London,Turkey,6,4,2
+1948,London,United Kingdom,6,39,11
+1948,London,United States,83,30,35
+1948,London,Uruguay,0,1,2
+1948,London,Yugoslavia,0,16,0
+1952,Helsinki,Argentina,2,2,2
+1952,Helsinki,Australia,7,2,11
+1952,Helsinki,Austria,0,1,2
+1952,Helsinki,Belgium,4,3,0
+1952,Helsinki,Brazil,1,0,2
+1952,Helsinki,Bulgaria,0,0,1
+1952,Helsinki,Canada,1,3,0
+1952,Helsinki,Chile,0,4,0
+1952,Helsinki,Czechoslovakia,11,4,10
+1952,Helsinki,Denmark,3,1,5
+1952,Helsinki,Egypt,0,0,1
+1952,Helsinki,Finland,8,3,29
+1952,Helsinki,France,14,9,16
+1952,Helsinki,Germany,0,14,26
+1952,Helsinki,Hungary,52,17,32
+1952,Helsinki,India,14,0,1
+1952,Helsinki,Iran,0,3,4
+1952,Helsinki,Ireland,0,1,0
+1952,Helsinki,Italy,17,21,15
+1952,Helsinki,Jamaica,5,3,0
+1952,Helsinki,Japan,1,9,2
+1952,Helsinki,"Korea, South",0,0,2
+1952,Helsinki,Lebanon,0,1,1
+1952,Helsinki,Luxembourg,1,0,0
+1952,Helsinki,Mexico,0,1,0
+1952,Helsinki,Netherlands,0,18,0
+1952,Helsinki,New Zealand,1,0,2
+1952,Helsinki,Norway,5,8,0
+1952,Helsinki,Poland,1,2,1
+1952,Helsinki,Portugal,0,0,2
+1952,Helsinki,Romania,1,1,2
+1952,Helsinki,Russia,36,62,19
+1952,Helsinki,South Africa,2,8,4
+1952,Helsinki,Spain,0,1,0
+1952,Helsinki,Sweden,23,24,23
+1952,Helsinki,Switzerland,2,19,12
+1952,Helsinki,Trinidad and Tobago,0,0,2
+1952,Helsinki,Turkey,2,0,1
+1952,Helsinki,United Kingdom,3,2,26
+1952,Helsinki,United States,79,23,28
+1952,Helsinki,Uruguay,0,0,14
+1952,Helsinki,Venezuela,0,0,1
+1952,Helsinki,Yugoslavia,4,20,0
+1956,Melbourne / Stockholm,Argentina,0,1,1
+1956,Melbourne / Stockholm,Australia,23,12,26
+1956,Melbourne / Stockholm,Austria,0,0,4
+1956,Melbourne / Stockholm,Bahamas,0,0,2
+1956,Melbourne / Stockholm,Belgium,0,2,0
+1956,Melbourne / Stockholm,Brazil,1,0,0
+1956,Melbourne / Stockholm,Bulgaria,1,3,14
+1956,Melbourne / Stockholm,Canada,5,9,5
+1956,Melbourne / Stockholm,Chile,0,2,2
+1956,Melbourne / Stockholm,Czechoslovakia,1,5,1
+1956,Melbourne / Stockholm,Denmark,1,5,1
+1956,Melbourne / Stockholm,Ecuador,12,23,22
+1956,Melbourne / Stockholm,Finland,3,1,22
+1956,Melbourne / Stockholm,France,6,13,13
+1956,Melbourne / Stockholm,Greece,0,0,1
+1956,Melbourne / Stockholm,Hungary,30,20,14
+1956,Melbourne / Stockholm,Iceland,0,1,0
+1956,Melbourne / Stockholm,India,17,0,0
+1956,Melbourne / Stockholm,Iran,2,2,1
+1956,Melbourne / Stockholm,Ireland,1,1,3
+1956,Melbourne / Stockholm,Italy,25,11,10
+1956,Melbourne / Stockholm,Japan,4,15,5
+1956,Melbourne / Stockholm,"Korea, South",0,1,1
+1956,Melbourne / Stockholm,Mexico,1,0,1
+1956,Melbourne / Stockholm,New Zealand,3,0,0
+1956,Melbourne / Stockholm,Norway,1,0,2
+1956,Melbourne / Stockholm,Pakistan,0,14,0
+1956,Melbourne / Stockholm,Poland,1,9,9
+1956,Melbourne / Stockholm,Romania,6,3,10
+1956,Melbourne / Stockholm,Russia,68,46,55
+1956,Melbourne / Stockholm,South Africa,0,0,7
+1956,Melbourne / Stockholm,Sweden,14,14,6
+1956,Melbourne / Stockholm,Switzerland,0,0,3
+1956,Melbourne / Stockholm,Turkey,3,2,2
+1956,Melbourne / Stockholm,United Kingdom,8,15,22
+1956,Melbourne / Stockholm,United States,61,37,20
+1956,Melbourne / Stockholm,Uruguay,0,0,12
+1956,Melbourne / Stockholm,Yugoslavia,0,23,0
+1960,Rome,Argentina,0,3,1
+1960,Rome,Australia,10,17,9
+1960,Rome,Austria,1,2,0
+1960,Rome,Belgium,0,2,2
+1960,Rome,Brazil,0,0,13
+1960,Rome,British West Indies,0,0,5
+1960,Rome,Bulgaria,1,3,3
+1960,Rome,Canada,0,9,0
+1960,Rome,Czechoslovakia,4,7,11
+1960,Rome,Denmark,2,17,4
+1960,Rome,Ecuador,34,33,21
+1960,Rome,Egypt,0,1,1
+1960,Rome,Ethiopia,1,0,0
+1960,Rome,Finland,1,1,4
+1960,Rome,France,0,6,5
+1960,Rome,Ghana,0,1,0
+1960,Rome,Greece,3,0,0
+1960,Rome,Hungary,13,16,36
+1960,Rome,India,0,13,0
+1960,Rome,Iran,0,1,3
+1960,Rome,Iraq,0,0,1
+1960,Rome,Italy,36,18,34
+1960,Rome,Japan,9,10,10
+1960,Rome,Mexico,0,0,1
+1960,Rome,Morocco,0,1,0
+1960,Rome,Netherlands,0,1,2
+1960,Rome,New Zealand,2,0,1
+1960,Rome,Norway,2,0,0
+1960,Rome,Pakistan,13,0,1
+1960,Rome,Poland,4,11,15
+1960,Rome,Portugal,0,2,0
+1960,Rome,Romania,3,1,11
+1960,Rome,Russia,61,63,45
+1960,Rome,Singapore,0,1,0
+1960,Rome,South Africa,0,1,2
+1960,Rome,Spain,0,0,14
+1960,Rome,Sweden,2,2,3
+1960,Rome,Switzerland,0,5,6
+1960,Rome,Taiwan,0,1,0
+1960,Rome,Turkey,7,2,0
+1960,Rome,United Kingdom,2,11,15
+1960,Rome,United States,68,23,21
+1960,Rome,Venezuela,0,0,1
+1960,Rome,Yugoslavia,16,1,0
+1964,Tokyo,Argentina,0,1,0
+1964,Tokyo,Australia,8,5,29
+1964,Tokyo,Bahamas,2,0,0
+1964,Tokyo,Belgium,2,0,1
+1964,Tokyo,Brazil,0,0,12
+1964,Tokyo,Bulgaria,3,5,2
+1964,Tokyo,Canada,2,2,1
+1964,Tokyo,Cuba,0,1,0
+1964,Tokyo,Czechoslovakia,5,38,12
+1964,Tokyo,Denmark,7,1,4
+1964,Tokyo,Ecuador,22,44,49
+1964,Tokyo,Ethiopia,1,0,0
+1964,Tokyo,Finland,3,0,2
+1964,Tokyo,France,1,13,17
+1964,Tokyo,Ghana,0,0,1
+1964,Tokyo,Hungary,42,7,7
+1964,Tokyo,India,15,0,0
+1964,Tokyo,Iran,0,0,2
+1964,Tokyo,Ireland,0,0,1
+1964,Tokyo,Italy,13,28,9
+1964,Tokyo,Japan,32,5,27
+1964,Tokyo,Kenya,0,0,1
+1964,Tokyo,"Korea, South",0,2,1
+1964,Tokyo,Mexico,0,0,1
+1964,Tokyo,Netherlands,5,9,16
+1964,Tokyo,New Zealand,4,0,2
+1964,Tokyo,Nigeria,0,0,1
+1964,Tokyo,Pakistan,0,16,0
+1964,Tokyo,Philippines,0,1,0
+1964,Tokyo,Poland,10,13,25
+1964,Tokyo,Romania,2,4,10
+1964,Tokyo,Russia,61,63,50
+1964,Tokyo,Sweden,3,4,8
+1964,Tokyo,Switzerland,1,4,1
+1964,Tokyo,Trinidad and Tobago,0,1,5
+1964,Tokyo,Tunisia,0,1,1
+1964,Tokyo,Turkey,2,3,1
+1964,Tokyo,United Kingdom,4,19,5
+1964,Tokyo,United States,78,36,36
+1964,Tokyo,Uruguay,0,0,1
+1964,Tokyo,Yugoslavia,2,11,2
+1968,Mexico,Argentina,0,0,2
+1968,Mexico,Australia,5,34,10
+1968,Mexico,Austria,0,2,3
+1968,Mexico,Belgium,0,1,2
+1968,Mexico,Brazil,0,1,3
+1968,Mexico,Bulgaria,2,21,3
+1968,Mexico,Cameroon,0,1,0
+1968,Mexico,Canada,3,3,4
+1968,Mexico,Cuba,0,10,0
+1968,Mexico,Czechoslovakia,7,7,15
+1968,Mexico,Denmark,4,6,6
+1968,Mexico,Ethiopia,1,1,0
+1968,Mexico,Finland,1,2,1
+1968,Mexico,France,12,5,10
+1968,Mexico,Germany,29,34,37
+1968,Mexico,Greece,0,0,1
+1968,Mexico,Hungary,32,20,29
+1968,Mexico,India,0,0,15
+1968,Mexico,Iran,2,1,2
+1968,Mexico,Italy,5,8,19
+1968,Mexico,Jamaica,0,1,0
+1968,Mexico,Japan,16,29,22
+1968,Mexico,Kenya,3,7,2
+1968,Mexico,"Korea, South",0,1,1
+1968,Mexico,Mexico,3,3,3
+1968,Mexico,Mongolia,0,1,3
+1968,Mexico,Netherlands,6,7,1
+1968,Mexico,New Zealand,5,0,2
+1968,Mexico,Norway,4,2,0
+1968,Mexico,Pakistan,13,0,0
+1968,Mexico,Poland,5,2,30
+1968,Mexico,Romania,5,9,9
+1968,Mexico,Russia,66,62,60
+1968,Mexico,Sweden,4,4,1
+1968,Mexico,Switzerland,0,3,10
+1968,Mexico,Taiwan,0,0,1
+1968,Mexico,Tunisia,1,0,1
+1968,Mexico,Turkey,2,0,0
+1968,Mexico,Uganda,0,1,1
+1968,Mexico,United Kingdom,8,5,5
+1968,Mexico,United States,83,31,35
+1968,Mexico,Venezuela,1,0,0
+1968,Mexico,Yugoslavia,13,14,2
+1972,Munich,Argentina,0,1,0
+1972,Munich,Australia,11,7,2
+1972,Munich,Austria,0,1,2
+1972,Munich,Belgium,0,2,0
+1972,Munich,Brazil,0,0,2
+1972,Munich,Bulgaria,6,10,6
+1972,Munich,Canada,0,2,8
+1972,Munich,Colombia,0,1,2
+1972,Munich,Cuba,3,1,18
+1972,Munich,Czechoslovakia,2,21,6
+1972,Munich,Denmark,1,0,0
+1972,Munich,Ethiopia,0,0,2
+1972,Munich,Finland,3,1,6
+1972,Munich,France,2,5,15
+1972,Munich,Germany,73,79,92
+1972,Munich,Ghana,0,0,1
+1972,Munich,Greece,0,2,0
+1972,Munich,Hungary,10,46,25
+1972,Munich,India,0,0,14
+1972,Munich,Iran,0,2,1
+1972,Munich,Italy,9,3,13
+1972,Munich,Jamaica,0,0,1
+1972,Munich,Japan,29,19,8
+1972,Munich,Kenya,5,3,4
+1972,Munich,"Korea, North",1,1,13
+1972,Munich,"Korea, South",0,1,0
+1972,Munich,Lebanon,0,1,0
+1972,Munich,Mexico,0,1,0
+1972,Munich,Mongolia,0,1,0
+1972,Munich,Netherlands,3,1,2
+1972,Munich,New Zealand,9,4,1
+1972,Munich,Niger,0,0,1
+1972,Munich,Nigeria,0,0,1
+1972,Munich,Norway,2,2,4
+1972,Munich,Pakistan,0,15,0
+1972,Munich,Poland,27,8,11
+1972,Munich,Romania,3,10,27
+1972,Munich,Russia,107,46,58
+1972,Munich,Spain,0,0,1
+1972,Munich,Sweden,4,9,8
+1972,Munich,Switzerland,0,8,0
+1972,Munich,Tunisia,0,1,0
+1972,Munich,Turkey,0,1,0
+1972,Munich,Uganda,1,1,0
+1972,Munich,United Kingdom,8,9,12
+1972,Munich,United States,53,59,43
+1972,Munich,Yugoslavia,15,1,2
+1976,Montreal,Australia,0,16,8
+1976,Montreal,Austria,0,0,1
+1976,Montreal,Belgium,0,3,6
+1976,Montreal,Bermuda*,0,0,1
+1976,Montreal,Brazil,0,0,3
+1976,Montreal,Bulgaria,8,13,18
+1976,Montreal,Canada,0,8,12
+1976,Montreal,Cuba,6,4,14
+1976,Montreal,Czechoslovakia,2,4,9
+1976,Montreal,Denmark,3,0,5
+1976,Montreal,Finland,4,2,0
+1976,Montreal,France,5,7,8
+1976,Montreal,Germany,120,75,72
+1976,Montreal,Hungary,14,6,35
+1976,Montreal,Iran,0,1,1
+1976,Montreal,Italy,2,25,4
+1976,Montreal,Jamaica,1,1,0
+1976,Montreal,Japan,25,6,10
+1976,Montreal,"Korea, North",1,1,0
+1976,Montreal,"Korea, South",1,1,15
+1976,Montreal,Mexico,1,0,1
+1976,Montreal,Mongolia,0,1,0
+1976,Montreal,Netherlands,0,2,13
+1976,Montreal,New Zealand,17,1,9
+1976,Montreal,Norway,2,4,0
+1976,Montreal,Pakistan,0,0,16
+1976,Montreal,Poland,18,29,26
+1976,Montreal,Portugal,0,2,0
+1976,Montreal,Puerto Rico*,0,0,1
+1976,Montreal,Romania,4,28,23
+1976,Montreal,Russia,113,93,79
+1976,Montreal,Spain,0,6,0
+1976,Montreal,Sweden,9,1,0
+1976,Montreal,Switzerland,1,3,6
+1976,Montreal,Thailand,0,0,1
+1976,Montreal,Trinidad and Tobago,1,0,0
+1976,Montreal,United Kingdom,6,15,11
+1976,Montreal,United States,63,56,36
+1976,Montreal,Venezuela,0,1,0
+1976,Montreal,Yugoslavia,2,14,3
+1980,Moscow,Australia,5,2,5
+1980,Moscow,Austria,1,3,1
+1980,Moscow,Belgium,1,0,0
+1980,Moscow,Brazil,4,0,5
+1980,Moscow,Bulgaria,8,46,40
+1980,Moscow,Cuba,8,7,5
+1980,Moscow,Czechoslovakia,18,18,16
+1980,Moscow,Denmark,4,2,2
+1980,Moscow,Ethiopia,2,0,2
+1980,Moscow,Finland,3,1,5
+1980,Moscow,France,18,5,6
+1980,Moscow,Germany,112,87,61
+1980,Moscow,Greece,1,0,4
+1980,Moscow,Guyana,0,0,1
+1980,Moscow,Hungary,8,13,40
+1980,Moscow,India,16,0,0
+1980,Moscow,Ireland,0,2,1
+1980,Moscow,Italy,8,21,8
+1980,Moscow,Jamaica,0,0,3
+1980,Moscow,"Korea, North",0,3,2
+1980,Moscow,Lebanon,0,0,1
+1980,Moscow,Mexico,0,1,11
+1980,Moscow,Mongolia,0,2,2
+1980,Moscow,Netherlands,0,1,5
+1980,Moscow,Poland,3,25,22
+1980,Moscow,Romania,7,15,50
+1980,Moscow,Russia,192,127,123
+1980,Moscow,Spain,2,19,3
+1980,Moscow,Sweden,3,6,9
+1980,Moscow,Switzerland,2,0,0
+1980,Moscow,Tanzania,0,2,0
+1980,Moscow,Uganda,0,1,0
+1980,Moscow,United Kingdom,5,18,22
+1980,Moscow,Venezuela,0,1,0
+1980,Moscow,Yugoslavia,13,27,17
+1980,Moscow,Zimbabwe,16,0,0
+1984,Los Angeles,Algeria,0,0,2
+1984,Los Angeles,Australia,7,14,29
+1984,Los Angeles,Austria,1,1,1
+1984,Los Angeles,Belgium,1,2,2
+1984,Los Angeles,Brazil,1,34,2
+1984,Los Angeles,Cameroon,0,0,1
+1984,Los Angeles,Canada,19,35,32
+1984,Los Angeles,China,26,13,37
+1984,Los Angeles,Colombia,0,1,0
+1984,Los Angeles,Cote d'Ivoire,0,1,0
+1984,Los Angeles,Denmark,0,5,10
+1984,Los Angeles,Dominican Republic,0,0,1
+1984,Los Angeles,Egypt,0,1,0
+1984,Los Angeles,Finland,4,2,6
+1984,Los Angeles,France,21,16,31
+1984,Los Angeles,Germany,31,74,52
+1984,Los Angeles,Greece,0,1,1
+1984,Los Angeles,Iceland,0,0,1
+1984,Los Angeles,Ireland,0,1,0
+1984,Los Angeles,Italy,29,6,28
+1984,Los Angeles,Jamaica,0,4,2
+1984,Los Angeles,Japan,10,8,31
+1984,Los Angeles,Kenya,1,0,2
+1984,Los Angeles,"Korea, South",6,29,7
+1984,Los Angeles,Mexico,2,3,1
+1984,Los Angeles,Morocco,2,0,0
+1984,Los Angeles,Netherlands,20,6,14
+1984,Los Angeles,New Zealand,16,1,6
+1984,Los Angeles,Nigeria,0,1,4
+1984,Los Angeles,Norway,0,1,3
+1984,Los Angeles,Pakistan,16,0,0
+1984,Los Angeles,Peru,0,1,0
+1984,Los Angeles,Portugal,1,0,2
+1984,Los Angeles,Puerto Rico*,0,1,1
+1984,Los Angeles,Romania,40,31,35
+1984,Los Angeles,Spain,2,14,3
+1984,Los Angeles,Sweden,3,18,11
+1984,Los Angeles,Switzerland,0,9,6
+1984,Los Angeles,Syria,0,1,0
+1984,Los Angeles,Taiwan,0,0,1
+1984,Los Angeles,Thailand,0,1,0
+1984,Los Angeles,Turkey,0,0,3
+1984,Los Angeles,United Kingdom,9,20,43
+1984,Los Angeles,United States,168,115,50
+1984,Los Angeles,Venezuela,0,0,3
+1984,Los Angeles,Yugoslavia,47,5,35
+1984,Los Angeles,Zambia,0,0,1
+1988,Seoul,Argentina,0,1,12
+1988,Seoul,Australia,18,6,10
+1988,Seoul,Austria,1,0,0
+1988,Seoul,Belgium,0,0,2
+1988,Seoul,Brazil,1,22,5
+1988,Seoul,Bulgaria,10,14,17
+1988,Seoul,Canada,4,5,12
+1988,Seoul,Chile,0,1,0
+1988,Seoul,China,6,16,31
+1988,Seoul,Colombia,0,0,1
+1988,Seoul,Costa Rica,0,1,0
+1988,Seoul,Czechoslovakia,3,4,3
+1988,Seoul,Denmark,3,1,3
+1988,Seoul,Djibouti,0,0,1
+1988,Seoul,Finland,1,1,2
+1988,Seoul,France,12,4,13
+1988,Seoul,Germany,107,89,91
+1988,Seoul,Greece,0,0,1
+1988,Seoul,Hungary,20,9,15
+1988,Seoul,Indonesia,0,3,0
+1988,Seoul,Iran,0,1,0
+1988,Seoul,Italy,11,10,8
+1988,Seoul,Jamaica,0,5,0
+1988,Seoul,Japan,4,3,13
+1988,Seoul,Kenya,5,2,2
+1988,Seoul,"Korea, South",28,37,12
+1988,Seoul,Mexico,0,0,2
+1988,Seoul,Mongolia,0,0,1
+1988,Seoul,Morocco,1,0,2
+1988,Seoul,Netherlands,3,5,36
+1988,Seoul,Netherlands Antilles*,0,1,0
+1988,Seoul,New Zealand,4,4,16
+1988,Seoul,Norway,2,21,0
+1988,Seoul,Pakistan,0,0,1
+1988,Seoul,Peru,0,12,0
+1988,Seoul,Philippines,0,0,1
+1988,Seoul,Poland,2,9,10
+1988,Seoul,Portugal,1,0,0
+1988,Seoul,Romania,8,30,13
+1988,Seoul,Russia,134,65,95
+1988,Seoul,Senegal,0,1,0
+1988,Seoul,Spain,1,2,2
+1988,Seoul,Suriname,1,0,0
+1988,Seoul,Sweden,0,5,11
+1988,Seoul,Switzerland,0,6,2
+1988,Seoul,Thailand,0,0,1
+1988,Seoul,Turkey,1,1,0
+1988,Seoul,United Kingdom,22,16,15
+1988,Seoul,United States,77,64,52
+1988,Seoul,Virgin Islands*,0,1,0
+1988,Seoul,Yugoslavia,15,27,21
+1992,Barcelona,Algeria,1,0,1
+1992,Barcelona,Argentina,0,0,2
+1992,Barcelona,Australia,14,27,16
+1992,Barcelona,Austria,0,6,0
+1992,Barcelona,Bahamas,0,0,1
+1992,Barcelona,Belgium,0,1,2
+1992,Barcelona,Brazil,13,1,0
+1992,Barcelona,Bulgaria,3,7,7
+1992,Barcelona,Canada,27,5,12
+1992,Barcelona,China,18,46,19
+1992,Barcelona,Colombia,0,0,1
+1992,Barcelona,Costa Rica,0,12,3
+1992,Barcelona,Cuba,44,13,14
+1992,Barcelona,Czechoslovakia,4,3,1
+1992,Barcelona,Denmark,3,2,9
+1992,Barcelona,Estonia,1,0,2
+1992,Barcelona,Ethiopia,1,0,2
+1992,Barcelona,European Union,92,65,66
+1992,Barcelona,Finland,1,4,2
+1992,Barcelona,France,9,5,43
+1992,Barcelona,Germany,81,57,60
+1992,Barcelona,Ghana,0,0,13
+1992,Barcelona,Greece,2,0,0
+1992,Barcelona,Hungary,14,23,8
+1992,Barcelona,Independent Olympic Participants,0,1,2
+1992,Barcelona,Indonesia,2,3,1
+1992,Barcelona,Iran,0,1,2
+1992,Barcelona,Ireland,1,1,0
+1992,Barcelona,Israel,0,1,1
+1992,Barcelona,Italy,22,10,14
+1992,Barcelona,Jamaica,0,3,1
+1992,Barcelona,Japan,3,8,36
+1992,Barcelona,Kenya,2,4,2
+1992,Barcelona,"Korea, North",4,0,6
+1992,Barcelona,"Korea, South",28,5,16
+1992,Barcelona,Latvia,0,2,1
+1992,Barcelona,Lithuania,1,0,12
+1992,Barcelona,Malaysia,0,0,2
+1992,Barcelona,Mexico,0,1,0
+1992,Barcelona,Mongolia,0,0,2
+1992,Barcelona,Morocco,1,1,1
+1992,Barcelona,Namibia,0,2,0
+1992,Barcelona,Netherlands,5,20,8
+1992,Barcelona,New Zealand,1,9,5
+1992,Barcelona,Nigeria,0,7,4
+1992,Barcelona,Norway,2,20,1
+1992,Barcelona,Pakistan,0,0,16
+1992,Barcelona,Peru,0,1,0
+1992,Barcelona,Philippines,0,0,1
+1992,Barcelona,Poland,5,18,19
+1992,Barcelona,Puerto Rico*,0,0,1
+1992,Barcelona,Qatar,0,0,1
+1992,Barcelona,Romania,8,31,14
+1992,Barcelona,Slovenia,0,0,6
+1992,Barcelona,South Africa,0,3,0
+1992,Barcelona,Spain,44,20,2
+1992,Barcelona,Suriname,0,0,1
+1992,Barcelona,Sweden,1,27,7
+1992,Barcelona,Switzerland,1,0,0
+1992,Barcelona,Taiwan,0,20,0
+1992,Barcelona,Thailand,0,0,1
+1992,Barcelona,Turkey,2,2,2
+1992,Barcelona,United Kingdom,8,3,39
+1992,Barcelona,United States,89,50,85
+1996,Atlanta,Algeria,2,0,1
+1996,Atlanta,Argentina,0,19,1
+1996,Atlanta,Armenia,1,1,0
+1996,Atlanta,Australia,32,16,84
+1996,Atlanta,Austria,0,1,2
+1996,Atlanta,Azerbaijan,0,1,0
+1996,Atlanta,Bahamas,0,5,0
+1996,Atlanta,Belarus,1,6,16
+1996,Atlanta,Belgium,2,2,2
+1996,Atlanta,Brazil,5,15,44
+1996,Atlanta,Bulgaria,3,12,6
+1996,Atlanta,Burundi,1,0,0
+1996,Atlanta,Canada,8,31,12
+1996,Atlanta,China,19,74,17
+1996,Atlanta,Costa Rica,17,13,0
+1996,Atlanta,Cuba,39,8,10
+1996,Atlanta,Czech Republic,4,5,4
+1996,Atlanta,Denmark,22,1,1
+1996,Atlanta,Ecuador,1,0,0
+1996,Atlanta,Ethiopia,2,0,1
+1996,Atlanta,Finland,1,2,1
+1996,Atlanta,France,21,10,20
+1996,Atlanta,Germany,42,35,49
+1996,Atlanta,Greece,4,4,0
+1996,Atlanta,Hong Kong*,1,0,0
+1996,Atlanta,Hungary,8,9,26
+1996,Atlanta,India,0,0,1
+1996,Atlanta,Indonesia,2,1,3
+1996,Atlanta,Iran,1,1,1
+1996,Atlanta,Ireland,3,0,1
+1996,Atlanta,Israel,0,0,1
+1996,Atlanta,Italy,19,24,28
+1996,Atlanta,Jamaica,1,3,12
+1996,Atlanta,Japan,3,26,14
+1996,Atlanta,Kazakhstan,3,4,4
+1996,Atlanta,Kenya,1,4,3
+1996,Atlanta,"Korea, North",2,1,2
+1996,Atlanta,"Korea, South",10,49,7
+1996,Atlanta,Latvia,0,1,0
+1996,Atlanta,Lithuania,0,0,12
+1996,Atlanta,Malaysia,0,2,1
+1996,Atlanta,Mexico,0,0,1
+1996,Atlanta,Moldova,0,2,1
+1996,Atlanta,Mongolia,0,0,1
+1996,Atlanta,Morocco,0,0,2
+1996,Atlanta,Mozambique,0,0,1
+1996,Atlanta,Namibia,0,2,0
+1996,Atlanta,Netherlands,38,9,26
+1996,Atlanta,New Zealand,3,2,4
+1996,Atlanta,Nigeria,19,4,3
+1996,Atlanta,Norway,2,3,20
+1996,Atlanta,Philippines,0,1,0
+1996,Atlanta,Poland,7,7,7
+1996,Atlanta,Portugal,1,0,2
+1996,Atlanta,Puerto Rico*,0,0,1
+1996,Atlanta,Romania,13,10,15
+1996,Atlanta,Russia,36,45,34
+1996,Atlanta,Slovakia,1,1,1
+1996,Atlanta,Slovenia,0,2,0
+1996,Atlanta,South Africa,3,1,1
+1996,Atlanta,Spain,24,21,22
+1996,Atlanta,Sweden,3,23,5
+1996,Atlanta,Switzerland,5,6,0
+1996,Atlanta,Syria,1,0,0
+1996,Atlanta,Taiwan,0,1,0
+1996,Atlanta,Thailand,1,0,1
+1996,Atlanta,Tonga,0,1,0
+1996,Atlanta,Trinidad and Tobago,0,0,2
+1996,Atlanta,Tunisia,0,0,1
+1996,Atlanta,Turkey,4,1,1
+1996,Atlanta,Uganda,0,0,1
+1996,Atlanta,Ukraine,10,5,19
+1996,Atlanta,United Kingdom,2,15,9
+1996,Atlanta,United States,160,48,52
+1996,Atlanta,Uzbekistan,0,1,1
+1996,Atlanta,Yugoslavia,1,12,13
+1996,Atlanta,Zambia,0,1,0
+2000,Sydney,Algeria,1,1,3
+2000,Sydney,Argentina,0,17,3
+2000,Sydney,Armenia,0,0,1
+2000,Sydney,Australia,60,69,54
+2000,Sydney,Austria,3,1,0
+2000,Sydney,Azerbaijan,2,0,1
+2000,Sydney,Bahamas,6,0,0
+2000,Sydney,Barbados,0,0,1
+2000,Sydney,Belarus,3,8,11
+2000,Sydney,Belgium,0,3,4
+2000,Sydney,Brazil,0,12,36
+2000,Sydney,Bulgaria,5,6,2
+2000,Sydney,Cameroon,18,0,0
+2000,Sydney,Canada,4,4,23
+2000,Sydney,Chile,0,0,18
+2000,Sydney,China,39,23,17
+2000,Sydney,Colombia,1,0,0
+2000,Sydney,Costa Rica,1,0,11
+2000,Sydney,Cuba,22,35,12
+2000,Sydney,Czech Republic,2,3,4
+2000,Sydney,Denmark,18,3,4
+2000,Sydney,Estonia,1,0,2
+2000,Sydney,Ethiopia,4,1,3
+2000,Sydney,Finland,3,1,1
+2000,Sydney,France,22,30,14
+2000,Sydney,Germany,31,23,71
+2000,Sydney,Greece,4,6,8
+2000,Sydney,Hungary,25,24,4
+2000,Sydney,Iceland,0,0,1
+2000,Sydney,India,0,0,1
+2000,Sydney,Indonesia,2,4,2
+2000,Sydney,Iran,3,0,1
+2000,Sydney,Ireland,0,1,0
+2000,Sydney,Israel,0,0,1
+2000,Sydney,Italy,22,14,29
+2000,Sydney,Jamaica,0,14,9
+2000,Sydney,Japan,5,30,8
+2000,Sydney,Kazakhstan,3,4,0
+2000,Sydney,Kenya,2,3,2
+2000,Sydney,"Korea, North",0,1,3
+2000,Sydney,"Korea, South",12,26,35
+2000,Sydney,Kuwait,0,0,1
+2000,Sydney,Kyrgyzstan,0,0,1
+2000,Sydney,Latvia,1,1,1
+2000,Sydney,Lithuania,2,0,15
+2000,Sydney,Macedonia,0,0,1
+2000,Sydney,Mexico,1,2,3
+2000,Sydney,Moldova,0,1,1
+2000,Sydney,Morocco,0,1,4
+2000,Sydney,Mozambique,1,0,0
+2000,Sydney,Netherlands,27,29,23
+2000,Sydney,New Zealand,1,0,3
+2000,Sydney,Nigeria,0,8,0
+2000,Sydney,Norway,21,4,19
+2000,Sydney,Poland,7,10,7
+2000,Sydney,Portugal,0,0,2
+2000,Sydney,Qatar,0,0,1
+2000,Sydney,Romania,27,6,13
+2000,Sydney,Russia,66,68,54
+2000,Sydney,Saudi Arabia,0,1,1
+2000,Sydney,Slovakia,2,3,1
+2000,Sydney,Slovenia,3,0,0
+2000,Sydney,South Africa,0,2,3
+2000,Sydney,Spain,3,20,20
+2000,Sydney,Sri Lanka,0,1,0
+2000,Sydney,Sweden,4,20,8
+2000,Sydney,Switzerland,1,11,2
+2000,Sydney,Taiwan,0,1,4
+2000,Sydney,Thailand,1,0,2
+2000,Sydney,Trinidad and Tobago,0,1,1
+2000,Sydney,Turkey,3,0,2
+2000,Sydney,Ukraine,3,20,12
+2000,Sydney,United Kingdom,22,20,13
+2000,Sydney,United States,130,66,52
+2000,Sydney,Uruguay,0,1,0
+2000,Sydney,Uzbekistan,1,1,2
+2000,Sydney,Vietnam,0,1,0
+2000,Sydney,Yugoslavia,12,1,13
+2004,Athens,Argentina,26,0,21
+2004,Athens,Australia,49,78,30
+2004,Athens,Austria,3,4,1
+2004,Athens,Azerbaijan,1,0,4
+2004,Athens,Bahamas,1,0,1
+2004,Athens,Belarus,2,6,9
+2004,Athens,Belgium,1,0,2
+2004,Athens,Brazil,18,19,3
+2004,Athens,Bulgaria,2,1,14
+2004,Athens,Cameroon,1,0,0
+2004,Athens,Canada,3,10,4
+2004,Athens,Chile,3,0,1
+2004,Athens,China,52,27,15
+2004,Athens,Colombia,0,0,2
+2004,Athens,Costa Rica,14,3,3
+2004,Athens,Cuba,31,8,22
+2004,Athens,Czech Republic,1,6,5
+2004,Athens,Denmark,19,0,10
+2004,Athens,Dominican Republic,1,0,0
+2004,Athens,Egypt,1,1,3
+2004,Athens,Eritrea,0,0,1
+2004,Athens,Estonia,0,1,2
+2004,Athens,Ethiopia,2,3,2
+2004,Athens,Finland,0,2,0
+2004,Athens,France,21,10,22
+2004,Athens,Germany,43,47,63
+2004,Athens,Greece,8,18,5
+2004,Athens,Hong Kong*,0,2,0
+2004,Athens,Hungary,24,12,4
+2004,Athens,India,0,1,0
+2004,Athens,Indonesia,1,1,3
+2004,Athens,Iran,2,2,2
+2004,Athens,Israel,1,0,1
+2004,Athens,Italy,24,39,39
+2004,Athens,Jamaica,6,1,6
+2004,Athens,Japan,21,20,53
+2004,Athens,Kazakhstan,1,4,3
+2004,Athens,Kenya,1,4,2
+2004,Athens,"Korea, North",0,4,1
+2004,Athens,"Korea, South",14,28,10
+2004,Athens,Latvia,0,4,0
+2004,Athens,Lithuania,1,2,0
+2004,Athens,Mexico,0,3,1
+2004,Athens,Mongolia,0,0,1
+2004,Athens,Morocco,2,1,0
+2004,Athens,Netherlands,4,50,22
+2004,Athens,New Zealand,4,2,0
+2004,Athens,Nigeria,0,0,8
+2004,Athens,Norway,5,0,2
+2004,Athens,Paraguay,0,17,0
+2004,Athens,Poland,4,2,6
+2004,Athens,Portugal,0,2,1
+2004,Athens,Romania,23,5,11
+2004,Athens,Russia,47,49,96
+2004,Athens,Serbia,0,14,0
+2004,Athens,Slovakia,3,2,5
+2004,Athens,Slovenia,0,2,3
+2004,Athens,South Africa,4,3,3
+2004,Athens,Spain,4,15,8
+2004,Athens,Sweden,5,5,2
+2004,Athens,Switzerland,1,2,4
+2004,Athens,Syria,0,0,1
+2004,Athens,Taiwan,2,4,3
+2004,Athens,Thailand,3,1,4
+2004,Athens,Trinidad and Tobago,0,0,1
+2004,Athens,Turkey,3,3,4
+2004,Athens,Ukraine,9,8,31
+2004,Athens,United Arab Emirates,1,0,0
+2004,Athens,United Kingdom,17,25,15
+2004,Athens,United States,116,75,73
+2004,Athens,Uzbekistan,2,1,2
+2004,Athens,Venezuela,0,0,2
+2004,Athens,Zimbabwe,1,1,1
+2008,Beijing,Afghanistan,0,0,1
+2008,Beijing,Algeria,0,1,1
+2008,Beijing,Argentina,20,0,31
+2008,Beijing,Armenia,0,0,6
+2008,Beijing,Australia,31,42,76
+2008,Beijing,Austria,0,1,2
+2008,Beijing,Azerbaijan,1,2,4
+2008,Beijing,Bahamas,0,4,1
+2008,Beijing,Belarus,8,5,17
+2008,Beijing,Belgium,1,4,0
+2008,Beijing,Brazil,14,34,27
+2008,Beijing,Bulgaria,1,1,3
+2008,Beijing,Cameroon,1,0,0
+2008,Beijing,Canada,11,13,10
+2008,Beijing,Chile,0,1,0
+2008,Beijing,China,74,53,57
+2008,Beijing,Colombia,0,1,1
+2008,Beijing,Costa Rica,0,2,3
+2008,Beijing,Cuba,2,34,11
+2008,Beijing,Czech Republic,3,4,0
+2008,Beijing,Denmark,6,6,6
+2008,Beijing,Dominican Republic,1,1,0
+2008,Beijing,Ecuador,0,1,0
+2008,Beijing,Egypt,0,0,1
+2008,Beijing,Estonia,1,2,0
+2008,Beijing,Ethiopia,4,1,2
+2008,Beijing,Finland,1,2,2
+2008,Beijing,France,25,23,28
+2008,Beijing,Germany,45,16,46
+2008,Beijing,Greece,0,3,4
+2008,Beijing,Hungary,16,8,3
+2008,Beijing,Iceland,0,14,0
+2008,Beijing,India,1,0,2
+2008,Beijing,Indonesia,2,2,3
+2008,Beijing,Iran,1,0,1
+2008,Beijing,Ireland,0,1,2
+2008,Beijing,Israel,0,0,1
+2008,Beijing,Italy,8,14,20
+2008,Beijing,Jamaica,9,3,5
+2008,Beijing,Japan,23,11,17
+2008,Beijing,Kazakhstan,2,4,7
+2008,Beijing,Kenya,6,4,4
+2008,Beijing,"Korea, North",2,1,3
+2008,Beijing,"Korea, South",41,11,26
+2008,Beijing,Kyrgyzstan,0,1,1
+2008,Beijing,Latvia,1,1,1
+2008,Beijing,Lithuania,0,2,3
+2008,Beijing,Malaysia,0,1,0
+2008,Beijing,Mauritius,0,0,1
+2008,Beijing,Mexico,2,0,2
+2008,Beijing,Moldova,0,0,1
+2008,Beijing,Mongolia,2,2,0
+2008,Beijing,Morocco,0,1,1
+2008,Beijing,Netherlands,40,18,4
+2008,Beijing,New Zealand,4,2,8
+2008,Beijing,Nigeria,0,18,6
+2008,Beijing,Norway,16,5,1
+2008,Beijing,Panama,1,0,0
+2008,Beijing,Poland,6,13,1
+2008,Beijing,Portugal,1,1,0
+2008,Beijing,Romania,5,1,16
+2008,Beijing,Russia,43,44,56
+2008,Beijing,Serbia,0,1,14
+2008,Beijing,Singapore,0,3,0
+2008,Beijing,Slovakia,4,5,1
+2008,Beijing,Slovenia,1,2,2
+2008,Beijing,South Africa,0,1,0
+2008,Beijing,Spain,7,48,16
+2008,Beijing,Sudan,0,1,0
+2008,Beijing,Sweden,0,5,2
+2008,Beijing,Switzerland,3,0,8
+2008,Beijing,Taiwan,0,0,4
+2008,Beijing,Tajikistan,0,1,1
+2008,Beijing,Thailand,2,2,0
+2008,Beijing,Togo,0,0,1
+2008,Beijing,Trinidad and Tobago,0,5,0
+2008,Beijing,Tunisia,1,0,0
+2008,Beijing,Turkey,1,4,3
+2008,Beijing,Ukraine,10,5,16
+2008,Beijing,United Kingdom,31,25,21
+2008,Beijing,United States,125,109,81
+2008,Beijing,Uzbekistan,1,2,3
+2008,Beijing,Venezuela,0,0,1
+2008,Beijing,Vietnam,0,1,0
+2008,Beijing,Zimbabwe,1,3,0
+2012,London,Afghanistan,0,0,1
+2012,London,Algeria,1,0,0
+2012,London,Argentina,1,16,3
+2012,London,Armenia,0,1,1
+2012,London,Australia,19,36,59
+2012,London,Azerbaijan,2,2,6
+2012,London,Bahamas,4,0,0
+2012,London,Bahrain,0,0,1
+2012,London,Belarus,3,12,6
+2012,London,Belgium,0,1,2
+2012,London,Botswana,0,1,0
+2012,London,Brazil,14,34,11
+2012,London,Bulgaria,0,1,1
+2012,London,Cameroon,0,0,1
+2012,London,Canada,1,21,35
+2012,London,China,56,44,28
+2012,London,Colombia,1,3,4
+2012,London,Costa Rica,15,4,16
+2012,London,Cuba,5,3,7
+2012,London,Cyprus,0,1,0
+2012,London,Czech Republic,4,4,7
+2012,London,Denmark,3,5,8
+2012,London,Dominican Republic,1,1,0
+2012,London,Egypt,0,3,1
+2012,London,Estonia,0,1,1
+2012,London,Ethiopia,3,2,2
+2012,London,Finland,0,2,3
+2012,London,France,30,30,22
+2012,London,Gabon,0,1,0
+2012,London,Germany,46,31,24
+2012,London,Greece,0,0,3
+2012,London,Grenada,1,0,0
+2012,London,Guatemala,0,1,0
+2012,London,Hong Kong*,0,0,1
+2012,London,Hungary,12,8,6
+2012,London,India,0,2,4
+2012,London,Indonesia,0,2,1
+2012,London,Iran,5,6,2
+2012,London,Ireland,1,1,4
+2012,London,Italy,16,22,30
+2012,London,Jamaica,8,9,8
+2012,London,Japan,7,44,33
+2012,London,Kazakhstan,3,1,6
+2012,London,Kenya,2,4,6
+2012,London,"Korea, North",4,0,2
+2012,London,"Korea, South",18,13,32
+2012,London,Kuwait,0,0,1
+2012,London,Latvia,1,0,2
+2012,London,Lithuania,2,1,2
+2012,London,Malaysia,0,1,1
+2012,London,Mexico,18,5,3
+2012,London,Mongolia,0,2,3
+2012,London,Montenegro,0,14,0
+2012,London,Morocco,0,0,1
+2012,London,Netherlands,21,29,19
+2012,London,New Zealand,9,3,14
+2012,London,Norway,15,1,1
+2012,London,Poland,3,1,8
+2012,London,Portugal,0,2,0
+2012,London,Puerto Rico*,0,1,1
+2012,London,Qatar,0,0,2
+2012,London,Romania,2,8,6
+2012,London,Russia,47,32,51
+2012,London,Saudi Arabia,0,0,4
+2012,London,Serbia,1,1,14
+2012,London,Singapore,0,0,4
+2012,London,Slovakia,0,1,4
+2012,London,Slovenia,1,1,3
+2012,London,South Africa,6,2,1
+2012,London,Spain,6,34,25
+2012,London,Sweden,2,18,3
+2012,London,Switzerland,2,2,0
+2012,London,Taiwan,1,0,1
+2012,London,Tajikistan,0,0,1
+2012,London,Thailand,0,2,2
+2012,London,Trinidad and Tobago,1,4,5
+2012,London,Tunisia,2,0,1
+2012,London,Turkey,1,2,1
+2012,London,Uganda,1,0,0
+2012,London,Ukraine,9,4,12
+2012,London,United Kingdom,48,30,48
+2012,London,United States,147,57,46
+2012,London,Uzbekistan,1,0,2
+2012,London,Venezuela,1,0,0
+2016,Rio,Morocco,0,0,1
+2016,Rio,Algeria,0,2,0
+2016,Rio,Argentina,21,1,0
+2016,Rio,Armenia,1,3,0
+2016,Rio,Australia,23,34,25
+2016,Rio,Austria,0,0,2
+2016,Rio,Azerbaijan,1,7,10
+2016,Rio,Bahamas,1,0,5
+2016,Rio,Burundi,0,1,0
+2016,Rio,Belgium,2,17,2
+2016,Rio,Belarus,1,4,7
+2016,Rio,Brazil,37,8,6
+2016,Rio,Bahrain,1,1,0
+2016,Rio,Bulgaria,0,1,6
+2016,Rio,Canada,4,4,61
+2016,Rio,China,46,30,37
+2016,Rio,Cote d'Ivoire,1,0,1
+2016,Rio,Colombia,3,2,3
+2016,Rio,Croatia,7,15,2
+2016,Rio,Cuba,5,2,4
+2016,Rio,Czech Republic,1,2,12
+2016,Rio,Denmark,15,10,16
+2016,Rio,Dominican Republic,0,0,1
+2016,Rio,Egypt,0,0,3
+2016,Rio,Spain,9,19,17
+2016,Rio,Estonia,0,0,4
+2016,Rio,Ethiopia,1,2,5
+2016,Rio,Fiji,13,0,0
+2016,Rio,Finland,0,0,1
+2016,Rio,France,20,54,21
+2016,Rio,United Kingdom,64,55,26
+2016,Rio,Georgia,2,1,4
+2016,Rio,Germany,49,44,67
+2016,Rio,Greece,3,1,3
+2016,Rio,Grenada,0,1,0
+2016,Rio,Hungary,12,3,7
+2016,Rio,Indonesia,2,2,0
+2016,Rio,India,0,1,1
+2016,Rio,Iran,3,1,4
+2016,Rio,Ireland,0,3,0
+2016,Rio,Israel,0,0,2
+2016,Rio,Italy,8,40,24
+2016,Rio,Jamaica,11,17,2
+2016,Rio,Jordan,1,0,0
+2016,Rio,Japan,17,13,35
+2016,Rio,Kazakhstan,3,5,9
+2016,Rio,Kenya,6,6,1
+2016,Rio,"Korea, South",13,3,10
+2016,Rio,Kuwait,2,0,1
+2016,Rio,Lithuania,0,2,5
+2016,Rio,Malaysia,0,7,1
+2016,Rio,Moldova,0,0,1
+2016,Rio,Mexico,0,3,2
+2016,Rio,Mongolia,0,1,1
+2016,Rio,Netherlands,9,25,13
+2016,Rio,Nigeria,0,0,18
+2016,Rio,Niger,0,1,0
+2016,Rio,Norway,0,0,19
+2016,Rio,New Zealand,6,25,5
+2016,Rio,Philippines,0,1,0
+2016,Rio,Poland,3,3,10
+2016,Rio,Portugal,0,0,1
+2016,Rio,"Korea, North",2,3,2
+2016,Rio,Puerto Rico*,1,0,0
+2016,Rio,Qatar,0,1,0
+2016,Rio,Romania,4,2,11
+2016,Rio,South Africa,2,7,14
+2016,Rio,Russia,52,29,34
+2016,Rio,Singapore,1,0,0
+2016,Rio,Slovenia,1,2,1
+2016,Rio,Serbia,14,26,13
+2016,Rio,Switzerland,6,3,2
+2016,Rio,Slovakia,3,5,0
+2016,Rio,Sweden,2,23,3
+2016,Rio,Thailand,2,2,2
+2016,Rio,Tajikistan,1,0,0
+2016,Rio,Taiwan,1,0,4
+2016,Rio,Trinidad and Tobago,0,0,1
+2016,Rio,Tunisia,0,0,3
+2016,Rio,Turkey,1,3,4
+2016,Rio,United Arab Emirates,0,0,1
+2016,Rio,Ukraine,2,8,5
+2016,Rio,United States,139,54,71
+2016,Rio,Uzbekistan,4,2,7
+2016,Rio,Venezuela,0,1,2
+2016,Rio,Vietnam,1,1,0
