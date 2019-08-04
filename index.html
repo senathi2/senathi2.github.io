@@ -80,7 +80,7 @@
 				currCity = data[i].City;
 			}
 		}
-  	});
+  	
 
 
       //currCity = "Rio";
@@ -98,7 +98,9 @@
         document.getElementById("btnPrev").disabled = false;
       }
       document.getElementById("city_year").innerHTML = currCity + "&nbsp;" + currYear;
-      return dataset;
+      //return dataset;
+	render_viz(dataset);
+	});
     }
 
     function render_viz(dataset) {
@@ -173,7 +175,7 @@
         .style("height", diameter + "px");
     }
 
-    render_viz(prepData(2016));
+    prepData(2016);
 
   </script>
 </body>
