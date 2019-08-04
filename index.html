@@ -49,6 +49,7 @@
     }
 
     function prepData(year) {
+	var currCity = null; 
       // Test dataset
       // Comment when using real data loaded through d3.csv function
      /*dataset = null; {
@@ -70,7 +71,7 @@
 	     //console.log(data);
 		for (var i = 0; i < data.length; i++) {
 			if(data[i].Year == year) {
-				employees.accounting.push({ 
+				dataset.children.push({ 
         					"Name": data[i].Country,
         					"Gold": data[i].Gold,
         					"Silver": data[i].Silver,
