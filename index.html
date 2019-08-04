@@ -73,9 +73,9 @@
 			if(data[i].Year == year) {
 				dataset.children.push({ 
         					"Name": data[i].Country,
-        					"Gold": data[i].Gold,
-        					"Silver": data[i].Silver,
-						"Bronze": data[i].Bronze
+        					"Gold": parseInt(data[i].Gold, 10),
+        					"Silver": parseInt(data[i].Silver, 10),
+						"Bronze": parseInt(data[i].Bronze, 10)
     					});
 				currCity = data[i].City;
 			}
