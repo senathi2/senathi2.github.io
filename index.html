@@ -51,7 +51,7 @@
     function prepData(year) {
       // Test dataset
       // Comment when using real data loaded through d3.csv function
-     dataset = null; /*{
+     /*dataset = null; {
         "children": [{ "Name": "United States", "Gold": 46, "Silver": 37, "Bronze": 38 },
         { "Name": "China", "Gold": 26, "Silver": 18, "Bronze": 26 },
         { "Name": "Russia", "Gold": 19, "Silver": 18, "Bronze": 19 },
@@ -62,15 +62,27 @@
         { "Name": "Japan", "Gold": 12, "Silver": 8, "Bronze": 21 },
         { "Name": "Brazil", "Gold": 7, "Silver": 6, "Bronze": 6 }]
       };	*/     
-	     
+	dataset = {
+    			"children": []
+		};     
 	  
-	     d3.csv("https://senathi2.github.io/OlympicsMedalData.csv", function(data) {
-	     	console.log(data);
-    
-  		});
+	d3.csv("https://senathi2.github.io/OlympicsMedalData.csv", function(data) {
+	     //console.log(data);
+		for (var i = 0; i < data.length; i++) {
+			if(data[i].Year == year) {
+				employees.accounting.push({ 
+        					"Name": data[i].Country,
+        					"Gold": data[i].Gold,
+        					"Silver": data[i].Silver,
+						"Bronze": data[i].Bronze
+    					});
+				currCity = data[i].City;
+			}
+		}
+  	});
 
 
-      currCity = "Rio";
+      //currCity = "Rio";
       currYear = year;
       if (currYear == 2016) {
         document.getElementById("btnNext").disabled = true;
