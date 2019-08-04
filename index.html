@@ -1,254 +1,164 @@
 <!DOCTYPE html>
-<html style="", lang="en">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Olympic Medals Visualization</title>
+  <!-- Load d3.js -->
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- A bit of CSS: change stroke color of circle on hover (white -> black) -->
+  <style>
+    .btn {
+      border: none;
+      background-color: inherit;
+      padding: 5px 5px;
+      font-size: 15px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    /* On mouse-over */
+    .btn:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+
 <body>
 
-<div id="rio-olympics-2016-medals-results" class="interactive-graphic">
-
-<style>
-
-#g-medals-chart {
-}
-#g-cartogram text {
-  pointer-events: none;
-}
-#g-year {
-  font: 18px/26px nyt-franklin, Arial, Helvetica;
-  font-weight: bold;
-  min-width: 90px;
-  text-align: left;
-}
-
-svg circle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  vector-effect: non-scaling-stroke;
-}
-circle.hover {
-  stroke-width: 1.5px !important;
-  stroke: black !important;
-}
-svg text {
-  font-family: nyt-cheltenham, Georgia, serif;
-  line-height: 1;
-  text-anchor: middle;
-  pointer-events: none;
-  fill: rgba(0, 0, 0, 0.85);
-}
-svg text tspan {
-  font-size: inherit;
-  dy: 30px;
-}
-#g-controls div {
-   vertical-align: middle;
-}
-#g-controls .g-button-set {
-  border: 1px #ccc solid;
-  border-radius: 3px;
-  line-height: 1;
-}
-#g-controls * {
-  white-space: nowrap;
-  display: inline-block;
-}
-#g-controls > * {
-  margin-bottom: 3px;
-}
-#g-controls .btn {
-  cursor: pointer;
-  height: 26px;
-  font-family: nyt-franklin, Arial, Helvetica;
-  padding: 0 10px;
-  font-size: 14px;
-  outline: none !important;
-  line-height: 26px;
-  opacity: 0.5;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  
-}
-#g-controls .btn:hover {
-  opacity: 1;
-}
-#g-controls .disabled .btn:hover {
-  opacity: 0.5;
-}
-#g-controls .disabled {
-  opacity: 0.25;
-  cursor: default;
-}
-#g-year-control {
-  width: 205px;
-}
-.g-prevnext {
-    background: url(https://int.nyt.com/applications/sochi_hub/assets/arrows-ee2a6c9641b32df2051db3cba58b2bfa.png) no-repeat;
-    width: 5px;
-}
-#next_btn {
-  margin-left: -1px;
-  margin-right: 10px;
-}
-#prev_btn .btn {
-  background-position:  7px -2px;
-}
-#next_btn .btn {
-  background-position: 7px -32px;
-}
-#g-controls .btn.selected {
-  background-color: #eee;
-  font-weight: bold;
-  opacity: 1;
-}
-#g-chart-head {
-  position: relative;
-  z-index: 1;
-  visibility: hidden;
-   
-}
-#g-chart-head > div {
-  
-}
-
-#g-controls {
-  
-}
-#g-controls > div {
-  display: inline-block;
-}
-.g-tooltip {
-  white-space: nowrap !important;
-  position: absolute;
-  visibility: hidden;
-  z-index: 100;
-  font-family: nyt-franklin, Arial ,Helvetica ,sans-serif;
-  background-color:white;
-  padding: 7px 8px 7px 8px;
-  border:1px solid #eee;
-  font-size: 13px;
-  line-height: 1.2;
-  color: #555;
-  border-radius: 4px;
-  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.3);
-}
-.g-tooltip .g-title {
-  font-weight: bold;
-  font-size: 14px;
-  color: black;
-}
-.g-tooltip .g-subtitle {
-  margin: 3px 0 0 0;
-}
-.g-gold-icon {
-  color: #EFC763; 
-}
-.g-silver-icon {
-  color: #b7b7b7;
-}
-.g-bronze-icon {
-  color: #B78B79; 
-}
-.g-gold-text {
-  color: goldenrod;
-}
-.g-silver-text {
-  color: #888;
-}
-.g-bronze-text {
-  padding-right: 1px;
-  color: #A87867; 
-}
-.g-medal-icon {
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 20px; 
-  padding: 5px 0 0 0;
-  overflow:hidden;
-  line-height:12px;
-  height:12px;
-  -webkit-text-stroke-color: rgba(0,0,0,0.18);
-  -webkit-text-stroke: 1px;
-}
-.g-medal-text {
-  vertical-align: middle;
-  line-height: 1;
-  padding: 5px 7px 0 3px;
-  display: inline-block;
-}
-.viewport-medium-10 .collection-meta-header {
-  margin-bottom: 10px;
-}
-#story .story-meta .story-heading,
-#story .story-meta .story-meta-footer {
-  display: none;
-}
-#rio-olympics-2016-medals-results .collection-heading {
-  font-family: "nyt-cheltenham", georgia, times, serif;
-  font-weight: 200;
-  font-size: 2.5rem;
-  padding-top: 2rem;
-  
-  letter-spacing: 1px;
-  
-}
-#rio-olympics-2016-medals-results .collection-subheading {
-  margin: 10px 0 40px 0;
-  padding-top: 1rem;
-  max-width: 705px;
-  font-size: 1rem;
-  line-height: 1.0625rem;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "nyt-franklin", arial, helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #666;
-  letter-spacing: 0.01em;
-}
-.viewport-medium-50 #rio-olympics-2016-medals-results .collection-subheading {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: "nyt-franklin",arial,helvetica,sans-serif;
-}
-#rio-olympics-2016-medals-results .oly-table .oly-schedule-timestamp {
-  display: none;
-}
-#rio-olympics-2016-medals-results .oly-table-title {
-  display: none;
-}
-</style>
-
-<h1 class="collection-heading">Olympics Medals By Country</h1>   
-<h2 class="collection-subheading">The narrative visualization depicts the breakdown of Olympic medals accomplished by each country per Olympic year starting 1896 Olympic year to 2016.</h2>
-<div id="g-medals-chart" data-preview-slug="2016-07-26-2016-olympic-map-maker">
-  <div id="g-chart-head" style="visibility: visible;">
-    <div id="g-controls">
-      <div class="g-button-set">
-      </div>
-      
-      <div id="g-year-control">
-        <div id="prev_btn" class="g-button-set"><div class="btn g-prevnext"></div></div><div id="next_btn" class="g-button-set disabled"><div class="btn g-prevnext"></div></div><div id="g-year" class='g-head-label'>Rio 2016</div>
-      </div>
-    </div>
-   
+  <!-- Create a div where the graph will take place -->
+  <div>
+    <button id="btnPrev" class="btn" onclick="updateViz(-1)">Prev</button>
+    <button id="btnNext" class="btn" onclick="updateViz(1)">Next</button>
+    &nbsp; &nbsp;
+    <b><label id="city_year"></label></b>
   </div>
-  <div id="g-cartogram"></div>
-  <svg style="overflow: visible;" width="1050" height="494"><g class="cartogram"><g transform="translate(216.105,323.450) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(711.013,218.848) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(515.539,405.234) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(533.194,292.212) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(425.726,293.057) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(973.063,347.965) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(245.400,277.118) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(466.273,361.347) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(440.099,345.599) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(731.253,263.920) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(551.114,278.158) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(131.874,271.121) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(218.551,205.380) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(227.894,390.080) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(252.725,307.572) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(814.211,321.092) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(718.750,242.535) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(522.609,419.543) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(519.977,361.430) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(219.422,434.403) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(506.829,363.846) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(518.776,383.626) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(515.007,376.044) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(986.448,372.384) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(578.828,400.714) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(354.311,342.051) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(162.381,314.984) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(158.727,277.200) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(595.752,297.271) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(612.669,327.773) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(246.620,292.986) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(204.586,376.591) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(578.551,318.954) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(929.139,278.372) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(504.244,378.491) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(437.049,363.183) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(409.981,343.102) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(393.129,337.550) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(397.212,343.110) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(501.834,371.175) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(126.986,277.203) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(910.857,274.709) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(239.894,354.406) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(813.648,277.951) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(144.076,288.124) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(212.688,289.522) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(626.078,281.649) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(302.813,87.925) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(715.080,199.073) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(786.354,286.517) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(988.832,293.023) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(240.523,273.466) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(624.576,283.331) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(763.112,284.389) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(621.936,284.304) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(412.153,357.016) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(511.823,341.940) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(245.400,303.914) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(481.734,225.238) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(712.878,291.697) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(544.522,439.635) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(437.565,195.685) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(570.276,109.705) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(441.992,285.808) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(588.615,417.506) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(694.622,308.962) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(946.207,274.709) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(552.896,279.569) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(422.668,344.306) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(507.814,338.395) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(734.591,267.816) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(535.365,291.355) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(554.230,407.502) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(414.633,333.377) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(629.845,418.645) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(543.344,403.160) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(512.146,416.226) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(153.842,300.304) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(716.693,238.306) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(940.088,304.012) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(678.855,271.865) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(715.915,230.871) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(181.923,329.715) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(216.329,375.932) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(882.806,296.686) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(905.928,339.419) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(239.150,409.947) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(599.599,300.010) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(529.466,381.022) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(623.558,291.769) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(541.321,343.833) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(396.791,333.645) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(927.891,330.872) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(409.894,350.394) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(137.973,289.378) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(514.983,289.049) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(601.409,360.458) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(483.877,374.861) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(242.321,354.733) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(541.364,431.895) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(627.783,371.187) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(620.763,280.070) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(516.547,350.461) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(438.987,367.027) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(716.745,200.572) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(854.171,361.096) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(964.532,373.605) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(957.177,329.651) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(536.163,396.545) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(530.872,370.468) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(249.225,416.531) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(93, 159, 237); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(240.976,306.931) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(234.683,258.796) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(232.467,276.737) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(938.867,354.070) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(968.159,344.302) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(217, 106, 229); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(612.710,313.630) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(524.822,404.120) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(534.391,413.845) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(138, 132, 247); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(528.395,140.828) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(442.768,199.455) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(187, 157, 252); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(166.356,128.986) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(161, 208, 255); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(816.547,307.760) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(632.933,315.353) scale(0.100)" style="opacity: 0;"><circle style="fill: rgb(243, 165, 249); stroke-width: 2;" r="10"></circle><text></text></g><g transform="translate(632.803,288.899) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(521.220,209.313) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text></text></g><g transform="translate(524.842,391.541) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(215.179,277.457) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(597.610,94.417) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(571.284,64.750) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(953.513,362.616) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(217, 106, 229); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(244.568,316.238) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(603.551,309.522) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(411.072,320.038) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(614.015,203.582) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(495.935,355.158) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(478.769,358.662) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(831.713,285.878) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(229.374,267.248) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(362.849,272.425) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(642.710,313.345) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(794.560,318.804) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(709.499,209.036) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(227.975,321.999) scale(0.754)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(623.596,306.209) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(192.265,206.803) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10" class=""></circle><text></text></g><g transform="translate(425.183,357.812) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(431.758,335.081) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(718.232,264.851) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(340.483,232.587) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(583.629,304.113) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(788.450,145.531) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(779.168,297.454) scale(1.066)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(606.767,286.437) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:7.3535px;" dy="0.3em" x="0" y="0em">Bulg.</tspan></text></g><g transform="translate(554.879,336.518) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:7.3535px;" dy="0.3em" x="0" y="0em">Egypt</tspan></text></g><g transform="translate(804.428,341.751) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(451.211,357.496) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(844.738,266.874) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(243.204,339.288) scale(1.306)" style="opacity: 1;"><circle style="fill: rgb(93, 159, 237); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(235.480,427.397) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(93, 159, 237); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(635.835,220.457) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(573.239,89.570) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.6182px;" dy="0.3em" x="0" y="0em">Lithu.</tspan></text></g><g transform="translate(495.106,42.469) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(589.208,194.373) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(511.174,229.355) scale(1.508)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(95.256,284.227) scale(1.686)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.1176px;" dy="0.3em" x="0" y="0em">Mexico</tspan></text></g><g transform="translate(769.758,329.018) scale(1.686)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.1176px;" dy="0.3em" x="0" y="0em">Malay.</tspan></text></g><g transform="translate(603.246,228.322) scale(1.686)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text></text></g><g transform="translate(418.596,174.404) scale(1.847)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.2754px;" dy="0.3em" x="0" y="0em">Belgium</tspan></text></g><g transform="translate(552.316,303.563) scale(1.847)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.6875px;" dy="0.3em" x="0" y="0em">Greece</tspan></text></g><g transform="translate(747.612,298.426) scale(1.847)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:7.3535px;" dy="0.3em" x="0" y="0em">Thai.</tspan></text></g><g transform="translate(483.480,247.696) scale(1.995)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.1695px;" dy="0.3em" x="0" y="0em">Switz.</tspan></text></g><g transform="translate(657.619,190.995) scale(1.995)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.2374px;" dy="0.3em" x="0" y="0em">Georgia</tspan></text></g><g transform="translate(823.476,138.329) scale(1.995)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="-0.45em">North</tspan><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="0.55em">Korea</tspan></text></g><g transform="translate(209.130,353.286) scale(2.132)" style="opacity: 1;"><circle style="fill: rgb(93, 159, 237); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.7323px;" dy="0.3em" x="0" y="0em">Colom.</tspan></text></g><g transform="translate(591.640,338.787) scale(2.132)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.1631px;" dy="0.3em" x="0" y="0em">Ethiopia</tspan></text></g><g transform="translate(663.604,290.036) scale(2.132)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:9.2152px;" dy="0.3em" x="0" y="0em">Iran</tspan></text></g><g transform="translate(575.251,268.218) scale(2.132)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.1176px;" dy="0.3em" x="0" y="0em">Serbia</tspan></text></g><g transform="translate(630.545,258.411) scale(2.132)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.6875px;" dy="0.3em" x="0" y="0em">Turkey</tspan></text></g><g transform="translate(589.294,125.741) scale(2.262)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.2374px;" dy="0.3em" x="0" y="0em">Belarus</tspan></text></g><g transform="translate(560.246,164.222) scale(2.384)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="-0.45em">Czech</tspan><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="0.55em">Rep.</tspan></text></g><g transform="translate(527.695,266.637) scale(2.384)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.6000px;" dy="0.3em" x="0" y="0em">Croatia</tspan></text></g><g transform="translate(518.916,445.566) scale(2.384)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.5059px;" dy="0.3em" x="0" y="-0.45em">South</tspan><tspan style="font-size:5.5059px;" dy="0.3em" x="0" y="0.55em">Africa</tspan></text></g><g transform="translate(190.309,244.825) scale(2.500)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:8.2727px;" dy="0.3em" x="0" y="0em">Cuba</tspan></text></g><g transform="translate(186.311,297.113) scale(2.500)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:4.9524px;" dy="0.3em" x="0" y="0em">Jamaica</tspan></text></g><g transform="translate(541.040,116.638) scale(2.500)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.1176px;" dy="0.3em" x="0" y="0em">Poland</tspan></text></g><g transform="translate(536.340,64.735) scale(2.500)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:5.3529px;" dy="0.3em" x="0" y="0em">Sweden</tspan></text></g><g transform="translate(619.424,164.451) scale(2.500)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:5.2374px;" dy="0.3em" x="0" y="0em">Ukraine</tspan></text></g><g transform="translate(559.548,378.358) scale(2.718)" style="opacity: 1;"><circle style="fill: rgb(138, 132, 247); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.7407px;" dy="0.3em" x="0" y="0em">Kenya</tspan></text></g><g transform="translate(702.634,172.509) scale(2.718)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.6875px;" dy="0.3em" x="0" y="0em">Uzbek.</tspan></text></g><g transform="translate(484.757,87.939) scale(2.920)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:4.6667px;" dy="0.3em" x="0" y="0em">Denmark</tspan></text></g><g transform="translate(555.353,219.530) scale(2.920)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:4.9189px;" dy="0.3em" x="0" y="0em">Hungary</tspan></text></g><g transform="translate(370.378,313.066) scale(3.109)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:7.3535px;" dy="0.3em" x="0" y="0em">Spain</tspan></text></g><g transform="translate(747.201,131.031) scale(3.109)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:3.6583px;" dy="0.3em" x="0" y="0em">Kazakhstan</tspan></text></g><g transform="translate(682.379,238.000) scale(3.199)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:3.6583px;" dy="0.3em" x="0" y="0em">Azerbaijan</tspan></text></g><g transform="translate(945.276,441.637) scale(3.199)" style="opacity: 1;"><circle style="fill: rgb(217, 106, 229); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:4.7137px;" dy="0.3em" x="0" y="-0.45em">New</tspan><tspan style="font-size:4.7137px;" dy="0.3em" x="0" y="0.55em">Zealand</tspan></text></g><g transform="translate(262.590,383.548) scale(3.286)" style="opacity: 1;"><circle style="fill: rgb(93, 159, 237); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.6182px;" dy="0.3em" x="0" y="0em">Brazil</tspan></text></g><g transform="translate(424.480,110.096) scale(3.286)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:3.4667px;" dy="0.3em" x="0" y="0em">Netherlands</tspan></text></g><g transform="translate(868.309,173.427) scale(3.455)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="-0.45em">South</tspan><tspan style="font-size:6.0667px;" dy="0.3em" x="0" y="0.55em">Korea</tspan></text></g><g transform="translate(102.660,61.406) scale(3.536)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:5.6875px;" dy="0.3em" x="0" y="0em">Canada</tspan></text></g><g transform="translate(477.554,308.762) scale(3.989)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:8.9877px;" dy="0.3em" x="0" y="0em">Italy</tspan></text></g><g transform="translate(877.984,408.456) scale(4.060)" style="opacity: 1;"><circle style="fill: rgb(217, 106, 229); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:4.5217px;" dy="0.3em" x="0" y="0em">Australia</tspan></text></g><g transform="translate(953.446,169.743) scale(4.827)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:6.7407px;" dy="0.3em" x="0" y="0em">Japan</tspan></text></g><g transform="translate(414.007,243.262) scale(4.886)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:5.6875px;" dy="0.3em" x="0" y="0em">France</tspan></text></g><g transform="translate(485.081,168.319) scale(4.886)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:4.6667px;" dy="0.3em" x="0" y="0em">Germany</tspan></text></g><g transform="translate(664.511,95.443) scale(5.642)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:6.1176px;" dy="0.3em" x="0" y="0em">Russia</tspan></text></g><g transform="translate(340.054,157.792) scale(6.171)" style="opacity: 1;"><circle style="fill: rgb(187, 157, 252); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:6.0165px;" dy="0.3em" x="0" y="0em">Britain</tspan></text></g><g transform="translate(780.796,221.465) scale(6.308)" style="opacity: 1;"><circle style="fill: rgb(243, 165, 249); stroke-width: 0;" r="10"></circle><text><tspan style="font-size:7.3535px;" dy="0.3em" x="0" y="0em">China</tspan></text></g><g transform="translate(99.503,182.084) scale(8.293)" style="opacity: 1;"><circle style="fill: rgb(161, 208, 255); stroke-width: 0;" r="10" class=""></circle><text><tspan style="font-size:5.9564px;" dy="0.3em" x="0" y="-0.45em">United</tspan><tspan style="font-size:5.9564px;" dy="0.3em" x="0" y="0.55em">States</tspan></text></g></g></svg>
+  <div id="my_dataviz"></div>
 
-<div id="g-graphic" data-preview-slug="2016-07-26-rio-results-page">
+  <script type="text/javascript">
+    var currYear = null;
+    /*var fulldata;
+    d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/OlympicsMedalData.csv", function (data) {
+		fulldata=data;
+        console.log(data);
+      });*/
 
-  <link rel="stylesheet" href="https://int.nyt.com/apps/oly-table-publisher/nyt/embed-34fcf47b2293ca852b2706a9a6c5e6c3.css" media="screen" title="no title" charset="utf-8">
+    function updateViz(yearDirection) {
+      render_viz(prepData(currYear + 4 * yearDirection));
+    }
 
-<style type="text/css">
- 
-</style>
-<div class="oly-table-container oly-table-type-schedule_unit" id="oly-table-container-5798fef0523d040001dd0bc2">
-<div><div class="oly-table oly-table-5798fef0523d040001dd0bc2 oly-table-schedule_unit oly-code-2016 oly-discipline-20 "><table><thead><tr><th colspan="1" class=" header-event header"></th><th colspan="1" class="gold header-header header">Gold</th><th colspan="1" class="silver header-header header">Silver</th><th colspan="1" class="bronze header-header header">Bronze</th></tr></thead></table></div>
+    function prepData(year) {
+      // Test dataset
+      // Comment when using real data loaded through d3.csv function
+     dataset = {d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/OlympicsMedalData.csv").then(function(data) {
+  data.forEach(function(d) {
+  if (year==d.Year)
+  {
+  Name : d.Country,
+  Gold : d.Gold,
+  Silver : d.Silver,
+  Bronze : d.Bronze,
+  }
+    
+  });};
 
-</div>
 
-</div>
+   
 
-<div class="g-tooltip" style="visibility: visible; top: 660px; left= -500px; opacity: 0;"<div class="g-title">Russia</div><div class="g-subtitle">56 medals</div><div class="g-medal-icon g-gold-icon">•</div><div class="g-medal-text">19</div><div class="g-medal-icon g-silver-icon">•</div><div class="g-medal-text">18</div><div class="g-medal-icon g-bronze-icon">•</div><div class="g-medal-text">19</div></div>
+      currCity = "Rio";
+      currYear = year;
+      if (currYear == 2016) {
+        document.getElementById("btnNext").disabled = true;
+      }
+      else {
+        document.getElementById("btnNext").disabled = false;
+      }
+      if (currYear == 1896) {
+        document.getElementById("btnPrev").disabled = true;
+      }
+      else {
+        document.getElementById("btnPrev").disabled = false;
+      }
+      document.getElementById("city_year").innerHTML = currCity + "&nbsp;" + currYear;
+      return dataset;
+    }
 
+    function render_viz(dataset) {
+      var diameter = 600;
+      var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+      var bubble = d3.pack(dataset)
+        .size([diameter, diameter])
+        .padding(1.5);
+
+      document.getElementById("my_dataviz").innerHTML = "";
+
+      var svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
+
+      var nodes = d3.hierarchy(dataset)
+        .sum(function (d) { return d.Gold + d.Silver + d.Bronze; });
+
+      var node = svg.selectAll(".node")
+        .data(bubble(nodes).descendants())
+        .enter()
+        .filter(function (d) {
+          return !d.children
+        })
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function (d) {
+          return "translate(" + d.x + "," + d.y + ")";
+        });
+
+      node.append("title")
+        .text(function (d) {
+          return d.Name + ": " + (d.Gold + d.Silver + d.Bronze);
+        });
+
+      node.append("circle")
+        .attr("r", function (d) {
+          return d.r;
+        })
+        .style("fill", function (d, i) {
+          return color(i);
+        });
+
+      node.append("text")
+        .attr("dy", ".2em")
+        .style("text-anchor", "middle")
+        .text(function (d) {
+          return d.data.Name.substring(0, d.r / 3);
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", function (d) {
+          return d.r / 5;
+        })
+        .attr("fill", "white");
+
+      node.append("text")
+        .attr("dy", "1.3em")
+        .style("text-anchor", "middle")
+        .text(function (d) {
+          return (d.data.Gold + d.data.Silver + d.data.Bronze);
+        })
+        .attr("font-family", "Gill Sans", "Gill Sans MT")
+        .attr("font-size", function (d) {
+          return d.r / 5;
+        })
+        .attr("fill", "white");
+
+      d3.select(self.frameElement)
+        .style("height", diameter + "px");
+    }
+
+    render_viz(prepData(2016));
+
+  </script>
 </body>
+
 </html>
