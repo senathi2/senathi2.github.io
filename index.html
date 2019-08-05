@@ -89,7 +89,7 @@
       var color = d3.scaleOrdinal(d3.schemeCategory20);
       var bubble = d3.pack(dataset)
         .size([diameter, diameter])
-        .padding(1.5);
+        .padding(1);
       document.getElementById("my_dataviz").innerHTML = "";
       var svg = d3.select("#my_dataviz")
         .append("svg")
