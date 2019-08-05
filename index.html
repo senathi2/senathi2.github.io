@@ -23,14 +23,7 @@
     .btn:hover {
       background: #eee;
     }
-     .bubbles {
-  stroke-width: 2px;
-  stroke: white;
-}
-
-    .bubbles:hover {
-  stroke: black;
-}
+    
  
   </style>
 </head>
@@ -48,29 +41,13 @@
 
   <script type="text/javascript">
     var currYear = null;
-    /*var fulldata;
-    d3.csv("https://github.com/senathi2/senathi2.github.io/blob/master/OlympicsMedalData.csv", function (data) {
-		fulldata=data;
-        console.log(data);
-      });*/
+    
     function updateViz(yearDirection) {
       prepData(currYear + 4 * yearDirection);
     }
     function prepData(year) {
 	var currCity = null; 
-      // Test dataset
-      // Comment when using real data loaded through d3.csv function
-     /*dataset = null; {
-        "children": [{ "Name": "United States", "Gold": 46, "Silver": 37, "Bronze": 38 },
-        { "Name": "China", "Gold": 26, "Silver": 18, "Bronze": 26 },
-        { "Name": "Russia", "Gold": 19, "Silver": 18, "Bronze": 19 },
-        { "Name": "Britain", "Gold": 27, "Silver": 23, "Bronze": 17 },
-        { "Name": "France", "Gold": 10, "Silver": 18, "Bronze": 14 },
-        { "Name": "Italy", "Gold": 8, "Silver": 12, "Bronze": 8 },
-        { "Name": "Mexico", "Gold": 0, "Silver": 3, "Bronze": 2 },
-        { "Name": "Japan", "Gold": 12, "Silver": 8, "Bronze": 21 },
-        { "Name": "Brazil", "Gold": 7, "Silver": 6, "Bronze": 6 }]
-      };	*/     
+      
 	dataset = {
     			"children": []
 		};     
@@ -89,7 +66,6 @@
 			}
 		}
   	
-      //currCity = "Rio";
       currYear = year;
       if (currYear == 2016) {
         document.getElementById("btnNext").disabled = true;
@@ -157,7 +133,7 @@
           return color(i);
         })
         .on("mouseover", function(d) {
-              tooltip.text("Country: " + d.Name);
+              tooltip.text("Country: " + d.data.Name + ", G: " + d.data.Gold + ", S: " + d.data.Silver + ", B: " + d.data.Bronze);
               tooltip.style("visibility", "visible");
       })
       .on("mousemove", function() {
@@ -166,14 +142,14 @@
       .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
       
       node.append("text")
-        .attr("dy", ".2em")
+        .attr("dy", ".3em")
         .style("text-anchor", "middle")
         .text(function (d) {
           return d.data.Name.substring(0, d.r / 3);
         })
         .attr("font-family", "sans-serif")
         .attr("font-size", function (d) {
-          return d.r / 5;
+          return d.r / 4;
         })
         .attr("fill", "black");
       node.append("text")
@@ -184,7 +160,7 @@
         })
         .attr("font-family", "Gill Sans", "Gill Sans MT")
         .attr("font-size", function (d) {
-          return d.r / 5;
+          return d.r / 4;
         })
         .attr("fill", "black");
       d3.select(self.frameElement)
